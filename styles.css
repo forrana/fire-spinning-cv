@@ -1,0 +1,68 @@
+@font-face { font-family: Pixel; src: url('fonts/DisposableDroidBB.otf'); }
+@font-face { font-family: Pixel; font-weight: bold; src: url('fonts/DisposableDroidBB_bld.otf');}
+@font-face { font-family: Computer; src: url('fonts/GamegirlClassic-9MVj.ttf');}
+
+h1, h2, h3, h4, h5{
+  font-family: Computer, sans-serif;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+body {
+  display: flex;
+  font-family: Pixel, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.25em;
+}
+
+body section {
+  flex: 1 0;
+}
+
+body main {
+  flex: 2 0;
+  justify-content: flex-start;
+}
+
+.left-column img {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+main article {
+  width: 80%;
+  margin-right: auto;
+  margin-bottom: 5em;
+}
+
+main article.general {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main article.skills section.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+}
+
+main article.skills span {
+  display: flex;
+}
+
+muted {
+  color: lightgray;
+}
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
