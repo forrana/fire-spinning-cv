@@ -34,15 +34,34 @@ body main {
   max-width: 300px;
 }
 
+.story img {
+  max-width: 100px;
+  float: left;
+}
+
+.story p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: 1.25em
+}
+
+.story p:last-child {
+  margin-bottom: 0.5em;
+}
+
 main article {
   width: 80%;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 main article.general {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+main article.story {
+  margin-bottom: 0;
 }
 
 main article.skills section.table {
