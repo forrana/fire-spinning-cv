@@ -17,6 +17,7 @@ body {
   font-family: Pixel, sans-serif;
   text-transform: uppercase;
   line-height: 1.25em;
+  flex-direction: row;
 }
 
 body section {
@@ -88,4 +89,31 @@ muted {
     {
         display: none !important;
     }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  .left-column img {
+    max-width: 95vw;
+  }
+
+  main article {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 0.7em;
+  }
+
 }
