@@ -70,6 +70,10 @@ main article.skills section.table {
     margin-bottom: 1em;
 }
 
+main article.skills {
+  white-space: nowrap
+}
+
 main article.skills span {
   display: flex;
 }
