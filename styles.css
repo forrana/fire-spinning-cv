@@ -101,6 +101,18 @@ muted {
   grid-template-columns: 1fr 2fr;
 }
 
+q {
+  display: block;
+  margin-bottom: 1em;
+  quotes: '\201c' '\201d' '\2018' '\2019';
+}
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+
 @media print
 {
     .no-print, .no-print *
@@ -109,12 +121,14 @@ muted {
     }
 
     .page-break {page-break-after: always;}
+    .page-break-before {page-break-before: always;}
     .experience-entry {page-break-inside: avoid;}
 }
 
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column-reverse;
+    margin-left: 1em;
   }
 
   body main {
